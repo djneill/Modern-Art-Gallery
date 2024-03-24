@@ -42,9 +42,7 @@ export default function Hero() {
                     width={500}
                     height={500}
                 />
-                <div className={bigShouldersDisplay.className}>
-                    <h1 className='text-6xl font-extrabold text-black leading-[60px] pl-6 py-8 uppercase'>Modern <br /> art gallery</h1>
-                </div>
+                <h1 className={`${bigShouldersDisplay.className} text-6xl font-extrabold text-black leading-[60px] inset-x-[16px]  inset-y-[272px] w-[343px] h-[110px] uppercase py-8 pl-4`}>Modern <br /> art gallery</h1>
                 <p className={`${outfit.className} text-[18px] leading-[28px] absolute w-[343px] h-[112px] inset-x-[16px] inset-y-[414px] font-normal text-black`}>{bodyData[0].description}</p>
             </div>
         </>
