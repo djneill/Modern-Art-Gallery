@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Big_Shoulders_Display } from 'next/font/google'
+import { Outfit } from 'next/font/google'
+
+const bigShouldersDisplay = Big_Shoulders_Display({
+  subsets: ['latin'],
+  variable: '--font-big-shoulders-display',
+})
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit',
+})
 
 const inter = Inter({ subsets: ["latin"] });
 

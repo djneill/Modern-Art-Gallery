@@ -12,13 +12,13 @@ const outfit = Outfit({
     variable: '--font-outfit',
 })
 
-export default function LocationButton() {
+export default function MobileLocationButton() {
     return (
         <Link href={"/location"}
             target='_blank'
             rel="noopener noreferrer"
         >
-            <div className='flex absolute w-[260px] h-[72px] inset-x-[925px] inset-y-[414px] group transition'>
+            <div className='flex absolute w-[260px] h-[72px] inset-x-[16px] inset-y-[558px] group transition'>
                 <div className='flex justify-center items-center w-[204px] h-[72px] bg-black group-hover:bg-[#D5966C]'>
                     <p className={`${bigShouldersDisplay.className} uppercase font-extrabold text-[20px] leading-[28px] tracking-widest`}>our location</p>
                 </div>
