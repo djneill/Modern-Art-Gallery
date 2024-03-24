@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+.prettierignore
 
 # testing
 /coverage
@@ -19,6 +20,9 @@
 # misc
 .DS_Store
 *.pem
+*.sketch
+*.fig
+*.xd
 
 # debug
 npm-debug.log*
