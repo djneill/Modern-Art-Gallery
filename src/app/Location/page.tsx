@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic'
 const MyAwesomeMap = dynamic(() => import("@/components/Map/map"), { ssr: false })
 
 
-export default function location() {
+export default function Location() {
     return (
         <div className='flex flex-col overflow-hidden'>
             <MyAwesomeMap />
