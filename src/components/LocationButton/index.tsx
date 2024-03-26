@@ -14,7 +14,7 @@ const outfit = Outfit({
 
 export default function LocationButton() {
     return (
-        <Link href={"/location"}
+        <Link href={"/Location"}
             target='_blank'
             rel="noopener noreferrer"
         >
