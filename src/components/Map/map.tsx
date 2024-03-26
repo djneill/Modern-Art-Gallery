@@ -12,10 +12,6 @@ import HomeButton from '../HomeButton'
 
 export default function Map() {
 
-    const MapContainer = dynamic(() => import('react-leaflet').then((mod) => mod.MapContainer), {
-        ssr: false, // This ensures the component is only rendered on the client side
-    });
-
     const [coord, setCoord] = useState<[number, number]>([41.490578, -71.310196])
 
     return (
