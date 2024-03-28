@@ -12,7 +12,7 @@ import HomeButton from '../HomeButton'
 
 export default function Map() {
 
-    const [coord, setCoord] = useState<[number, number]>([41.490578, -71.310196])
+    const [coord, setCoord] = useState<[number, number]>([41.4858, -71.3080])
 
     return (
         <div className='grid'>
@@ -22,7 +22,7 @@ export default function Map() {
             <MapContainer style={{
                 height: '80vh',
                 width: '100vw'
-            }} center={coord} zoom={18} scrollWheelZoom={false} className='col-start-1 row-start-1 z-30'>
+            }} center={coord} zoom={18} scrollWheelZoom={true} className='col-start-1 row-start-1 z-30'>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -37,7 +37,7 @@ export default function Map() {
                         shadowUrl: MarkerShadow.src,
                         shadowSize: [41, 41],
                     })
-                } position={[41.490578, -71.310196]}>
+                } position={[41.4858, -71.3080]}>
                     <Popup>
                         Modern Art Gallery
                     </Popup>
