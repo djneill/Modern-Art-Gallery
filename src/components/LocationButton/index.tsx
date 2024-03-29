@@ -18,7 +18,7 @@ export default function LocationButton() {
             target='_blank'
             rel="noopener noreferrer"
         >
-            <div className='flex absolute w-[260px] h-[72px] inset-x-[925px] inset-y-[414px] group transition'>
+            <div className='flex absolute w-[260px] h-[72px] lg:inset-x-[925px] lg:inset-y-[414px] group transition md:inset-x-[150px] md:inset-y-[650px] md:border-white md:border-2 md:border-solid lg:border-none'>
                 <div className='flex justify-center items-center w-[204px] h-[72px] bg-black group-hover:bg-[#D5966C]'>
                     <p className={`${bigShouldersDisplay.className} uppercase font-extrabold text-[20px] leading-[28px] tracking-widest`}>our location</p>
                 </div>

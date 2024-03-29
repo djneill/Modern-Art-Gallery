@@ -18,7 +18,7 @@ const outfit = Outfit({
 export default function Hero() {
     return (
         <>
-            <div className="hidden md:inline-flex h-[800px]">
+            <div className="hidden md:inline-flex h-[800px] container">
                 <div className='w-[450px] h-[100vh] bg-[#000000]'></div>
                 <div className='w-[540px] h-[100vh] bg-[#979797] inset-x-[450px]'>
                     <Image
@@ -32,8 +32,10 @@ export default function Hero() {
                 <div className={bigShouldersDisplay.className}>
                     <h1 className='text-8xl font-black tracking-normal leading-[88px] absolute inset-x-[165px] inset-y-[189px] uppercase mix-blend-difference'>Modern <br /> art gallery</h1>
                 </div>
-                <p className={`${outfit.className} text-[22px] leading-[32px] absolute w-[350px] h-[160px] inset-x-[925px] inset-y-[190px] font-normal text-black`}>{bodyData[0].description}</p>
-                <LocationButton />
+                <div className=''>
+                    <p className={`${outfit.className} text-[22px] leading-[32px] absolute w-[350px] h-[160px] lg:inset-x-[925px] lg:inset-y-[190px] md:inset-x-[150px] md:inset-y-[450px] md:text-sky-500 font-normal lg:text-black`}>{bodyData[0].description}</p>
+                    <LocationButton />
+                </div>
             </div>
 
             {/* Mobile View */}
